@@ -52,6 +52,7 @@ PriorityQueue<T>::~PriorityQueue() {}
 // Adds a new element to the priority queue.
 //
 // @param value, the value to be added.
+// @complexity O(log n)
 // =================================================================
 template <class T>
 void PriorityQueue<T>::push(T value) {
@@ -60,6 +61,8 @@ void PriorityQueue<T>::push(T value) {
 
 // =================================================================
 // Removes the element with the highest priority.
+// 
+// @complexity O(log n)
 // =================================================================
 template <class T>
 void PriorityQueue<T>::pop() {
@@ -68,6 +71,8 @@ void PriorityQueue<T>::pop() {
 
 // =================================================================
 // Returns the element with the highest priority.
+//
+// @complexity O(log n)
 // =================================================================
 template <class T>
 T PriorityQueue<T>::top() {
@@ -78,6 +83,8 @@ T PriorityQueue<T>::top() {
 
 // =================================================================
 // Returns true if the priority queue is empty.
+//
+// @complexity O(1)
 // =================================================================
 template <class T>
 bool PriorityQueue<T>::empty() {
@@ -86,6 +93,8 @@ bool PriorityQueue<T>::empty() {
 
 // =================================================================
 // Returns the size of the priority queue.
+//
+// @complexity O(1)
 // =================================================================
 template <class T>
 uint PriorityQueue<T>::size() {
